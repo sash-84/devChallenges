@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato;
+    display: flex;
+    background-color: #F2F5F9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    width: 450px;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+.image {
+    width: 450px;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.overlay {
+    width: 450px;
+    margin-top: -100px;
+}
+.title {
+    font-family: Poppins;
+    font-weight: 550;
+    letter-spacing: -1px;
+    font-size: 24px;
+    color: #111729;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.text {
+    font-size: 16px;
+    color: #677489;
+    margin-left: 30px;
+    margin-top: 16px;
+    margin-right: 60px;
+    margin-bottom: 16px;
+    line-height: 22px;
+}
+
+.signature {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 12px;
+    border-radius: 100%;
+    border: 3px solid #F2F5F9;
+
+}
+
+.name {
+    color: #111729;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.name2 {
+    color: #677489;
+    font-size: 12px;
+    font-weight: bold;
+}
