@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/bg.jpg);
+}
+
+.question, .circle, .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    width: 56%;
+    background-color: #343964;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+.container h5 {
+    color: #8B8EAB;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.question {
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #393F6E;
+    color: #E2E4F3;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.question-text {
+    color: #E2E4F3;
+    width: 60%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.options {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+}
+    
+.option {
+    width: 100%;
+    background-color: #393F6E;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFECC8;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.option:hover {
+    background: linear-gradient(90deg,#E65895, #BC6BE8);
+    color: #E2E4F3;}
+
+.result {
+    height: 430px;
+    width: 400px;
+    flex-direction: column;
+    background-color: #343964;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 25px 65px 25px;
+    color: #E2E4F3;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.1); 
+    display: none;
+}
+
+.image {
+    width: 100%;
+    height: 150px;
+    background: url(assets/congrats.svg) no-repeat center;
+    }
+    
+.result h1 {
+    font-size: 1.5rem;
+    padding: 5px 20px 20px 0px;
+    font-weight: 400;
+}
+
+.result h3 {
+    font-size: 1rem;
+    padding: 0px 0px 30px 0px;
+    font-weight: normal;
+}
+
+.result button {
+    background: linear-gradient(90deg,#E65895, #BC6BE8);
+    color: #E2E4F3;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 20px 70px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.selected {
+    background: linear-gradient(90deg,#E65895, #BC6BE8);
+}
+
+.disabled {
+    pointer-events: none;
+    background: linear-gradient(90deg,#E65895, #BC6BE8);
+    opacity: 0.8;
+}
+    
+.disable {
+    pointer-events: none;
+}
+
+.active {
+    background: linear-gradient(90deg,#E65895, #BC6BE8);
+}
+
+@media screen and (max-width: 768px) {
+    .container, .result {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container, .result {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .options {
+        grid-template-columns: 1fr;
+    }
+    .option {
+        width: 100%;
+    }
+}
