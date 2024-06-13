@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 🔗[ Solution](https://github.com/sash-84/Country-Quiz.git)
-- Live Site URL: ➡️[ Live Site](https://sash-84.github.io/Country-Quiz/)
+- Solution URL: 🔗[ Solution](https://github.com/sash-84/devChallenges.git)
+- Live Site URL: ➡️[ Live Site](https://sash-84.github.io/devChallenges/Country-Quiz/index.html)
 
 ## My process
 
